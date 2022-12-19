@@ -1,0 +1,22 @@
+table{
+    text-align: center;
+
+}
+
+caption {
+    text-align: center!important;
+    color: rgb(10, 10, 95)!important;
+    caption-side: top;
+}
+tr{
+    color:rgb(6, 6, 56);
+}
+input{
+    border: none;
+    text-align: center;
+   
+   
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}

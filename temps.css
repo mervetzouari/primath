@@ -1,0 +1,27 @@
+img{
+   width: 60%; 
+   
+}
+.container-sm{
+    margin-top: 70px!important ;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+table{
+    text-align: center;
+    
+
+}
+
+tr{
+    color:rgb(6, 6, 56);
+}
+input{
+    border: none;
+    text-align: center;
+   
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}

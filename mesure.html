@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول التحويلات</title>
+    <link rel="stylesheet" href="mesure.css">
+    
+     <!-- CSS bootstrap -->
+     <link rel="shortcut icon" href="#"> <!--I'm getting favicon.ico error-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+<script src="./mesureLitre.js" async></script>
+<script src="./mesurePoids.js" async></script>
+<script src="./mesureMetre.js" async></script>
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg " style= "background-color:rgb(224, 234, 250);" >
+    <div class="container-fluid ">
+        <a href="#" class="navbar-brand " style="color:rgb(35, 22, 224)">PRI_MATH</a>
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" style="color:rgba(35, 22, 224)" aria-current="page" href="./index.html">الرئيسية</a>
+              </li>
+            </ul>
+    </div>
+        </nav> 
+<div class="container-sm pt-5 mt-5" >
+      <table class="table table-bordered table-md" style="width:100% ;">
+        <thead >
+          <caption  > جدول تحويلات الأطوال  </caption>
+          <tr >
+            <th scope="col"class="bg-primary"> كم  </th>
+            <th scope="col" class="bg-primary">هم</th>
+            <th scope="col" class="bg-primary"> دكم</th>
+            <th scope="col" class="bg-primary">م </th>
+            <th scope="col" class="bg-primary"> دسم</th>
+            <th scope="col" class="bg-primary">سم</th>
+            <th scope="col" class="bg-primary">مم </th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="width:10% ;"><input type="number" id="kmetre"  style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="hkmetre"  style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="dkmetre" style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="metre"   style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''" ></td>
+            <td style="width:10% ;"><input type="number" id="dcmetre" style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="cmetre"  style="width: 100%;" placeholder="0"autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="mlmetre"  style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>      
+          </tr>
+         </tbody>
+      </table>
+      <table class="table table-bordered table-md" style="width:100% ;">
+        <thead >
+          <caption  > جدول تحويلات اللتر  </caption>
+          <tr >
+            <th scope="col"class="bg-primary"> كل </th>
+            <th scope="col" class="bg-primary">هل </th>
+            <th scope="col" class="bg-primary"> دكل </th>
+            <th scope="col" class="bg-primary">ل  </th>
+            <th scope="col" class="bg-primary"> دسل</th>
+            <th scope="col" class="bg-primary">سل </th>
+            <th scope="col" class="bg-primary">مل </th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr >
+            <td style="width:10% ;"><input type="number" id="klitre"  style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="hklitre"  style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="dklitre" style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="litre"   style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="dclitre" style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="clitre"  style="width: 100%;" placeholder="0"autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="mllitre"  style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>       
+          </tr>
+         </tbody>
+      </table>
+      <table class="table table-bordered table-md" style="width:100% ;">
+        <thead >
+          <caption  > جدول تحويلات الكتلة  </caption>
+          <tr >
+            <th scope="col"class="bg-primary"> كغ  </th>
+            <th scope="col" class="bg-primary">هغ  </th>
+            <th scope="col" class="bg-primary"> دكغ  </th>
+            <th scope="col" class="bg-primary">غ   </th>
+            <th scope="col" class="bg-primary"> دسغ </th>
+            <th scope="col" class="bg-primary">سغ  </th>
+            <th scope="col" class="bg-primary">مغ </th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr >
+            <td style="width:10% ;"><input type="number" id="kgramme"  style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="hkgramme"  style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="dkgramme" style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="gramme"   style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="dcgramme" style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="cgramme"  style="width: 100%;" placeholder="0"autocomplete="off" onfocus="this.placeholder=''"></td>
+            <td style="width:10% ;"><input type="number" id="mlgramme"  style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>       
+          </tr>
+         </tbody>
+      </table> 
+    </div>
+  </div>
+</body>
+</html>

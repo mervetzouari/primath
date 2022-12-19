@@ -1,0 +1,24 @@
+.container-sm{
+    margin-top: 70px!important ;
+    margin-bottom: 20px;
+}
+img{
+    width: 100%;
+    background-size: 100%;
+    background-repeat:no-repeat;
+}
+
+.card{
+    margin-bottom: 20px;
+    border-color: rgb(164, 162, 250)!important;
+    
+}
+.card-title {
+    text-align: right;
+    color: rgb(14, 14, 110);
+}
+.card-text{
+    text-align: right;
+    color: rgb(114, 114, 224);
+}
+a{text-align: center;}

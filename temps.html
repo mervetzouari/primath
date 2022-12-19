@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قيس الزمن</title>
+    <link rel="stylesheet" href="./temps.css">
+     <!-- CSS bootstrap -->
+<link rel="shortcut icon" href="#">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg " style= "background-color:rgb(224, 234, 250);" >
+        <div class="container-fluid ">
+            <a href="#" class="navbar-brand " style="color:rgb(35, 22, 224)">PRI_MATH</a>
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" style="color:rgba(35, 22, 224)" aria-current="page" href="./index.html">الرئيسية</a>
+                  </li>
+                </ul>
+        </div>
+        </div>
+            </nav> 
+            <div class="container-sm">
+              <img src="./horloge.jpg" alt="horloge">
+            </div>
+            <div class="container "  >
+              <table class="table table-bordered table-md" style="width:100% ;">
+                <thead >
+                  <tr >
+                    <th scope="col" class="bg-primary"> الساعة</th>
+                    <th scope="col" class="bg-primary">الدقائق</th>
+                    <th scope="col" class="bg-primary">الثانية  </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="width:10% ;" ><input type="number" id="h" style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''" ></td>
+                    <td style="width:10% ;"><input type="number" id="mn" style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>
+                    <td style="width:10% ;"><input type="number" id="sc" style="width: 100%;" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"></td>       
+                  </tr>
+                 </tbody>
+              </table>
+                  
+            </div>
+          </div>
+          <script >
+let h = document.getElementById("h");
+let mn = document.getElementById("mn");
+let sc = document.getElementById("sc");
+
+h.addEventListener("input", function(){calTemps(this.id, this.value);});
+mn.addEventListener("input", function(){calTemps(this.id, this.value);});
+sc.addEventListener("input", function(){calTemps(this.id, this.value);});
+
+
+
+function calTemps(id, valeur){
+    if(id == "h"){
+      mn.value = valeur * 60;
+      sc.value = valeur * 3600;
+    }else if(id == "mn"){
+      h.value = valeur / 60;
+      sc.value = valeur * 60;
+    }
+    else if(id == "sc"){
+      h.value = valeur / 3600;
+      mn.value = valeur / 60;
+    }
+    
+}
+          </script>
+               <!-- JavaScript Bundle with Popper -->
+      
+</body>
+</html>

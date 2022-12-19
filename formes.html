@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأشكال</title>
+    <link rel="stylesheet" href="./formes.css">
+    <script src="./formes.js" async></script>
+    <!-- CSS bootstrap -->
+    <link rel="shortcut icon" href="#"> <!--I'm getting favicon.ico error-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg " style= "background-color:rgb(224, 234, 250);" >
+        <div class="container-fluid ">
+            <a href="#" class="navbar-brand " style="color:rgb(35, 22, 224)">PRI_MATH</a>
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" style="color:rgba(35, 22, 224)" aria-current="page" href="./index.html">الرئيسية</a>
+                  </li>
+                </ul>
+        </div>
+        </div>
+            </nav> 
+            <section class="container mt-5 pt-5">
+              <div class="card mb-3"  >
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./carré.jpg" class="img-fluid rounded-start" alt="المربع">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" >
+                      <h5 class="card-title">المربع</h5>
+                      <p class="card-text"><input type="number" placeholder="أدخل قيس الضلع " autocomplete="off" onfocus="this.placeholder=''" id="ctC"> = أب = أد = دج = ب ج = ضلع</p>
+                      <p class="card-text"><input type="number"   placeholder="0" autocomplete="off" onfocus="this.placeholder=''" id="care"> = 4 X محيط = ضلع  </p> 
+                      <p class="card-text"><input type="number" id="AirC" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"> = ضلع X مساحة = ضلع </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" >
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./rectangle.jpg" class="img-fluid rounded-start" alt="المستطيل">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">المستطيل</h5>
+                      <p class="card-text"><input type="number" placeholder="أدخل قيس الطول "id="ctLg" autocomplete="off" onfocus="this.placeholder=''"> = أب = دج = الطول</p>
+                      <p class="card-text"><input type="number" placeholder="أدخل قيس العرض " id="ctLr" autocomplete="off" onfocus="this.placeholder=''"> = أد = ب ج = العرض</p>
+                      <p class="card-text"><input id="totalrect" type="number" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"> = 2 X (محيط = (طول + عرض  </p> 
+                      <p class="card-text"><input id="totalAirR" type="number" placeholder="0" autocomplete="off" onfocus="this.placeholder=''"> = عرض X مساحة = طول </p>
+                      <p class="card-text"><small class="text-muted">تأكّد أنّ الأقيسة لها نفس الوحدة</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" >
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./triangle.jpg" class="img-fluid rounded-start" alt="المثلث
+                    ">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">المثلث</h5>
+                      <p class="card-text"><input type="number" placeholder="أدخل قيس الإرتفاع " autocomplete="off" onfocus="this.placeholder=''" id="h"> = h = الإرتفاع</p>
+                      <p class="card-text"><input type="number" placeholder="أدخل قيس القاعدة " autocomplete="off" onfocus="this.placeholder=''" id="b"> = b = القاعدة</p>
+                      <p class="card-text"> محيط = مجموع قيس الأضلع  </p> 
+                      <p class="card-text"><input id="totalAirT" placeholder="0" autocomplete="off" onfocus="this.placeholder=''" type="number" >
+                         = 2 / (إرتفاع X مساحة = (قاعدة  </p>
+                      <p class="card-text"><small class="text-muted">تأكّد أنّ الأقيسة لها نفس الوحدة</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" >
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./cercle.png" class="img-fluid rounded-start" alt="الدائرة">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">الدائرة</h5>
+                      <p class="card-text"><input type="number" placeholder="أدخل قيس القطر " id="d" autocomplete="off" onfocus="this.placeholder=''">  <input type="number" placeholder="أدخل قيس الشعاع " id="r" autocomplete="off" onfocus="this.placeholder=''"> </p>
+                      <p class="card-text"><input type="number" id="cercle"  placeholder="0" autocomplete="off" onfocus="this.placeholder=''"> =  π X 2 X محيط = شعاع  </p> 
+                      <p class="card-text"><input type="number" id="AirCer"  placeholder="0" autocomplete="off" onfocus="this.placeholder=''" > =  π X شعاع X مساحة = شعاع </p>
+                      <p class="card-text"><small class="text-muted"> تساوي 3.14 تقريبا π </small></p>
+                      <p class="card-text"><small class="text-muted">الشعاع هو نصف القطر </small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>                  
+</body>
+</html>
